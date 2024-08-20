@@ -1,0 +1,33 @@
+header {
+  color: var(--emphasis-font-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+
+  & h1 {
+    font-size: 1.5rem;
+  }
+
+  & nav {
+    max-width: 70%;
+    width: 50%;
+    
+    & ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+      & li a {
+        color: var(--emphasis-font-color);
+        font-size: 1.25rem;
+      }
+      
+      & li a:hover {
+        color: #0686D1;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+    }
+  }
+}
