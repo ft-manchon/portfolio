@@ -71,6 +71,7 @@
   }
 }
 
+.btn-round,
 .btn-round a {
   background-color: var(--emphasis-font-color);
   border-radius: 50%;
@@ -106,11 +107,11 @@
     justify-content: center;
     gap: 0.3rem;
   }
+}
 
-  & .btn-round a:hover,
-  & .btn-rect:hover {
+.btn-round a:hover,
+.btn-rect:hover {
     background-color: #0686D1;
     cursor: pointer;
     transition: 0.5s;
   }
-}

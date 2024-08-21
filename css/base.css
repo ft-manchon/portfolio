@@ -22,3 +22,13 @@ body {
     width: 100%;
     margin: auto;
 }
+
+.btn-back {
+    position: fixed;
+    top: 90vh;
+    right: 2rem;
+
+    & img {
+        transform: rotate(180deg);
+    }
+}

@@ -1,0 +1,16 @@
+.c-about {
+  text-align: center;
+  
+  & p {
+    padding-bottom: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    letter-spacing: -2px;
+  }
+
+  & h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    padding-bottom: 3rem;
+  }
+}
