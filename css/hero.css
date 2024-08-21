@@ -1,0 +1,116 @@
+:root {
+  --bg-color: #05263A;
+  --font-color: #D9D9D9;
+  --emphasis-font-color: #FB6F24;
+  --hover-color: #0686D1;
+}
+
+.c-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 6rem 0;
+  position: relative;
+
+  & .c-hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    z-index: 1000;
+
+    & h2 {
+      font-size: 2.25rem;
+      font-weight: 200;
+    }
+
+    & h3 {
+      font-size: 4rem;
+      font-weight: 700;
+    }
+
+    & p {
+      font-size: 1.35rem;
+
+      & span {
+        font-size: 1.35rem;
+        color: var(--emphasis-font-color);
+      }
+    }
+
+    & nav ul {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+
+  & .c-hero__image {
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    z-index: 2;
+  }
+
+  & .c-home__image img {
+    clip-path: ellipse();
+    width: 240px;
+    z-index: 3;
+  }
+
+  & .back-circle {
+    background-color: var(--emphasis-font-color);
+    border-radius: 50%;
+    clip-path: ellipse();
+    filter: blur(7px);
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 1.5rem;
+    right: -2rem;
+    z-index: -1;
+  }
+}
+
+.btn-round a {
+  background-color: var(--emphasis-font-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.btn-rect {
+  background-color: var(--emphasis-font-color);
+  border: none;
+  border-radius: 12px;
+  width: 75px;
+  height: 40px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  & img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  & a {
+    color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+  }
+
+  & .btn-round a:hover,
+  & .btn-rect:hover {
+    background-color: #0686D1;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+}
