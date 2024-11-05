@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +12,13 @@
     <link rel="stylesheet" href="/css/hero.css">
     <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/swiper.css">
+    <link rel="stylesheet" href="/css/projects.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
 
     <title>Fernanda Tomita - Portfolio</title>
 </head>
+
 <body>
     <header id="header">
         <h1>Portfolio.</h1>
@@ -34,10 +39,14 @@
                 <p>Welcome to my <span>Front-end Web Development</span> portfolio!</p>
                 <nav>
                     <ul>
-                        <li class="btn-round"><a href=https://github.com/ft-manchon"><img src="/src/img/github.png" alt="GitHub icon"></a></li>
-                        <li class="btn-round"><a href="https://www.linkedin.com/in/ft-manchon/"><img src="/src/img/linkedin.png" alt="LinkedIn Icon"></a></li>
-                        <li class="btn-round"><a href="mailto:ft.manchon@gmail.com"><img src="/src/img/o-email.png" alt="E-mail icon"></a></li>
-                        <li class="btn-rect"><a href="src/docs/FERNANDA TOMITA MANCHON.pdf" download="cv"><img src="/src/img/arrow.png" alt="Download icon"> CV</a></li>
+                        <li class="btn-round"><a href="https://github.com/ft-manchon"><img src="/src/img/github.png"
+                                    alt="GitHub icon"></a></li>
+                        <li class="btn-round"><a href="https://www.linkedin.com/in/ft-manchon/"><img
+                                    src="/src/img/linkedin.png" alt="LinkedIn Icon"></a></li>
+                        <li class="btn-round"><a href="mailto:ft.manchon@gmail.com"><img src="/src/img/o-email.png"
+                                    alt="E-mail icon"></a></li>
+                        <li class="btn-rect"><a href="src/docs/FERNANDA TOMITA MANCHON.pdf" download="cv"><img
+                                    src="/src/img/arrow.png" alt="Download icon"> CV</a></li>
                     </ul>
                 </nav>
             </div>
@@ -57,11 +66,79 @@
                 new things.</p>
             <p>I'm passionate about nature, technology, music, dancing, reading, and my family and friends.</p>
         </section>
+        <section class="c-projects" id="projects">
+            <h2>Projects</h2>
+            <div class="swiper" aria-label="Gallery">
+                <div class="swiper-wrapper" id="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-content active">
+                            <h3>Age Calculator</h3>
+                            <p>FrontEnd Mentor challenge developed with JavaScript</p>
+                            <div class="c-media">
+                                <video src="assets/projects/age-calculator-video.mp4" type="mp4" controls="true"
+                                    autoplay="true" width="500"></video>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/ft-manchon/age-calculator-frontend-mentor">Code</a>
+                                <a href="https://ft-manchon.github.io/age-calculator-frontend-mentor/">Page</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <h3>E-commerce Product Page</h3>
+                            <p>FrontEnd Mentor challenge developed with Next.js</p>
+                            <div class="c-media">
+                                <img src="assets/projects/e-commerce-product-page.png" width="500"
+                                    alt="E-commerce Product Page Screenshot"></img>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/ft-manchon/ecommerce-product-page-frontend-mentor">Code</a>
+                                <a href="https://ft-manchon.github.io/ecommerce-product-page-frontend-mentor/">Page</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <h3>Product List with Cart</h3>
+                            <p>FrontEnd Mentor challenge developed with Next.js</p>
+                            <div class="c-media">
+                                <img src="assets/projects/product-list-with-cart.png" width="500"
+                                    alt="Product List with Cart Page Screenshot"></img>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/ft-manchon/product-list-frontend-mentor">Code</a>
+                                <a href="">Page</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
 
+                <button class="swiper-button-prev" id="button-prev">
+                    < </button>
+                        <button class="swiper-button-next" id="button-next">></button>
+
+                        <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
         <section class="c-contact" id="contact">
             <h2>Contact me</h2>
-            <form action="">
-                <div class="c-contact__inputs--half">
+            <div class="contact-links">
+                <nav>
+                    <ul>
+                        <li class="btn-round"><a href="https://github.com/ft-manchon"><img src="/src/img/github.png"
+                                    alt="GitHub icon"></a></li>
+                        <li class="btn-round"><a href="https://www.linkedin.com/in/ft-manchon/"><img
+                                    src="/src/img/linkedin.png" alt="LinkedIn Icon"></a></li>
+                        <li class="btn-round"><a href="mailto:ft.manchon@gmail.com"><img src="/src/img/o-email.png"
+                                    alt="E-mail icon"></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- <form action="">
+                    <div class="c-contact__inputs--half">
                     <input type="text" id="first-name" placeholder="First name">
                     <input type="text" id="last-name" placeholder="Last name">
                 </div>
@@ -73,7 +150,7 @@
                     <input type="text" class="input-lg" placeholder="Message">
                 </div>
             </form>
-            <button class="btn-rect btn-lg">Send</button>
+            <button class="btn-rect btn-lg">Send</button> -->
         </section>
 
         <a href="#header" class="btn-round btn-back">
@@ -81,4 +158,8 @@
         </a>
     </main>
 </body>
+<script src="js/script2.js"></script>
+<!-- <script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+
 </html>
